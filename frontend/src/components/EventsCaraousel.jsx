@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -129,7 +128,7 @@ const SwiperStyles = () => (
   <style>{`
     .events-carousel .swiper-button-next,
     .events-carousel .swiper-button-prev {
-      color: #F6B433; /* Your theme's gold color */
+      color: #22d3ee;
       transform: scale(0.7);
       background-color: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -141,14 +140,14 @@ const SwiperStyles = () => (
     .events-carousel .swiper-button-next:hover,
     .events-carousel .swiper-button-prev:hover {
         background-color: rgba(255, 255, 255, 0.1);
-        border-color: rgba(246, 180, 51, 0.5);
+        border-color: rgba(34, 211, 238, 0.5);
     }
     .events-carousel .swiper-pagination-bullet {
       background-color: #4b5563; /* Gray for inactive dots */
       opacity: 0.7;
     }
     .events-carousel .swiper-pagination-bullet-active {
-      background-color: #F6B433; /* Gold for the active dot */
+      background-color: #22d3ee;
       opacity: 1;
       width: 16px;
       border-radius: 4px;
@@ -193,7 +192,7 @@ const EventCard = ({ card }) => {
         transformStyle: 'preserve-3d',
         transition: 'transform 0.15s ease-out',
       }}
-      className="group h-full bg-white/[0.02] backdrop-blur-xl rounded-2xl p-6 border border-white/10 flex flex-col text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-amber-400/30 transition-colors duration-500 spotlight-card"
+      className="group h-full bg-white/[0.02] backdrop-blur-xl rounded-2xl p-6 border border-white/10 flex flex-col text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-cyan-400/30 transition-colors duration-500 spotlight-card"
     >
       <div className="mb-6 overflow-hidden rounded-xl border border-white/5 bg-black/40 h-48 flex items-center justify-center [transform:translateZ(20px)]">
         <img
@@ -203,7 +202,7 @@ const EventCard = ({ card }) => {
         />
       </div>
 
-      <h4 className="font-display text-lg font-bold mb-3 text-white group-hover:text-amber-300 transition-colors duration-300 [transform:translateZ(30px)]">
+      <h4 className="font-display text-lg font-bold mb-3 text-white group-hover:text-cyan-300 transition-colors duration-300 [transform:translateZ(30px)]">
         {card.title}
       </h4>
       <p className="text-slate-400 text-sm flex-grow leading-relaxed font-light [transform:translateZ(10px)]">
@@ -213,7 +212,7 @@ const EventCard = ({ card }) => {
       <div className="mt-6 [transform:translateZ(15px)]">
         <Link
           to={card.readMoreLink}
-          className="inline-block bg-gradient-to-r from-amber-500/10 to-yellow-500/5 border border-amber-500/20 text-amber-300 font-display text-xs font-bold tracking-wider px-5 py-2.5 rounded-full hover:bg-amber-500/25 hover:border-amber-400/50 transition-all duration-300"
+          className="inline-block bg-gradient-to-r from-cyan-500/10 to-blue-500/5 border border-cyan-500/20 text-cyan-300 font-display text-xs font-bold tracking-wider px-5 py-2.5 rounded-full hover:bg-cyan-500/25 hover:border-cyan-400/50 transition-all duration-300"
         >
           Read More &rarr;
         </Link>
@@ -235,7 +234,7 @@ const EventsCaraousel = () => {
       <SwiperStyles />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h3 className="font-sans text-3xl md:text-4xl font-black mb-12 text-center text-white tracking-tight">
-          Creating Impact Through <span className="font-serif italic font-normal text-amber-400">Events</span>
+          Creating Impact Through <span className="font-serif italic font-normal text-cyan-400">Events</span>
         </h3>
         
         <Swiper

@@ -92,7 +92,7 @@ const Contact = () => {
             >
                 <motion.h1
                     variants={titleVariants}
-                    className="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-500"
+                    className="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500"
                 >
                     Partner With Us
                 </motion.h1>
@@ -111,10 +111,10 @@ const Contact = () => {
                             onMouseMove={handleMouseMove}
                             onClick={card.handler}
                             className="group relative w-full max-w-sm h-80 p-8 rounded-xl bg-white/5 border border-white/20 flex flex-col items-center text-center cursor-pointer transition-all duration-300 hover:!scale-105"
-                            style={{ backgroundImage: `radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(250, 204, 21, 0.15), transparent 40%)` }}
+                            style={{ backgroundImage: `radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(34, 211, 238, 0.15), transparent 40%)` }}
                         >
                       <Link to={`${card.link}`}>
-                            <motion.div variants={cardItemVariants} className="w-20 h-20 mb-6 rounded-full flex items-center justify-center bg-gradient-to-br from-amber-500/20 to-yellow-500/20 border border-yellow-400/30 shadow-lg">
+                            <motion.div variants={cardItemVariants} className="w-20 h-20 mb-6 rounded-full flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-400/30 shadow-lg">
                                 <img src={card.icon} alt={`${card.title} icon`} className="w-12 h-12" />
                             </motion.div>
 

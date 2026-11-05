@@ -46,7 +46,7 @@ const Sponsors = () => {
           variants={titleVariants}
           className="font-sans text-3xl md:text-4xl font-black text-center mb-12 text-white tracking-tight"
         >
-          Supported by Industry <span className="font-serif italic font-normal text-amber-400">Leaders</span>
+          Supported by Industry <span className="font-serif italic font-normal text-cyan-400">Leaders</span>
         </motion.h2>
       </motion.div>
 
