@@ -1,4 +1,3 @@
-
 import { ChevronDown } from 'lucide-react';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -33,12 +32,11 @@ const FAQItem = ({ question, answer, isOpen, toggleOpen }) => {
         <span className="text-base font-semibold text-slate-200 group-hover:text-white transition-colors duration-300">
           {question}
         </span>
-        <span className={`transition-transform duration-300 text-amber-400 ${isOpen ? 'rotate-180' : ''}`}>
+        <span className={`transition-transform duration-300 text-cyan-400 ${isOpen ? 'rotate-180' : ''}`}>
           <ChevronDown size={20} />
         </span>
       </button>
 
-      {/* Using AnimatePresence for smooth open/close animation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -59,7 +57,7 @@ const FAQItem = ({ question, answer, isOpen, toggleOpen }) => {
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
-const faqs = [
+  const faqs = [
     {
       question: 'When was AssetMerkle IGDTUW established?',
       answer: 'AssetMerkle IGDTUW was established in January 2023 at IGDTUW'
@@ -99,7 +97,7 @@ const faqs = [
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-sans text-3xl md:text-4xl mt-24 font-black mb-6 text-white tracking-tight">
-            Frequently Asked <span className="font-serif italic font-normal text-amber-400">Questions</span>
+            Frequently Asked <span className="font-serif italic font-normal text-cyan-400">Questions</span>
           </h2>
         </div>
 
@@ -125,7 +123,7 @@ const faqs = [
           <p className="text-slate-400 text-base mb-6 font-light">Still have questions?</p>
           <a
             href="/"
-            className="inline-block px-8 py-3.5 bg-gradient-to-r from-amber-500/10 to-yellow-500/5 border border-amber-500/20 text-amber-300 font-display text-xs font-bold tracking-widest hover:bg-amber-500/20 hover:border-amber-400/50 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(245,158,11,0.05)] hover:shadow-[0_0_20px_rgba(245,158,11,0.12)] cursor-pointer"
+            className="inline-block px-8 py-3.5 bg-gradient-to-r from-cyan-500/10 to-blue-400/5 border border-cyan-500/20 text-cyan-300 font-display text-xs font-bold tracking-widest hover:bg-cyan-500/20 hover:border-cyan-400/50 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.05)] hover:shadow-[0_0_20px_rgba(34,211,238,0.12)] cursor-pointer"
           >
             Contact Us
           </a>

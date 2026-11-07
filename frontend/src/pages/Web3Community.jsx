@@ -39,7 +39,7 @@ const Web3Community = () => {
         {particles.map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-amber-500/20 rounded-full"
+            className="absolute w-2 h-2 bg-cyan-500/20 rounded-full"
             initial={{
               x: Math.random() * window.innerWidth,
               y: Math.random() * window.innerHeight,
@@ -77,7 +77,7 @@ const Web3Community = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-sans text-4xl md:text-7xl font-black mb-6 tracking-tight text-white animate-fade-in">
-            Web3 <span className="font-serif italic font-normal text-amber-400">Community</span>
+            Web3 <span className="font-serif italic font-normal text-cyan-400">Community</span>
           </h1>
           <p className="text-base md:text-lg text-slate-400 max-w-xl mx-auto mb-10 leading-relaxed font-light">
             A student-led space for learning, building, collaborating, and innovating in Web3.
@@ -93,7 +93,7 @@ const Web3Community = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-3.5 bg-gradient-to-r from-amber-500/10 to-yellow-500/5 border border-amber-500/30 text-amber-300 rounded-full font-display font-bold text-xs tracking-widest hover:bg-amber-500/20 hover:border-amber-400/50 transition-all duration-300 shadow-[0_0_15px_rgba(245,158,11,0.05)] cursor-pointer"
+            className="px-8 py-3.5 bg-gradient-to-r from-cyan-500/10 to-blue-400/5 border border-cyan-500/30 text-cyan-300 rounded-full font-display font-bold text-xs tracking-widest hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.05)] cursor-pointer"
           >
             Join the Community
           </motion.button>
@@ -130,7 +130,7 @@ const Web3Community = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500">
                 Our Community
               </span>
             </h2>
@@ -151,10 +151,10 @@ const Web3Community = () => {
                   transition={{ duration: 0.6, delay: i * 0.08 }}
                   whileHover={{ y: -6, scale: 1.01 }}
                   onMouseMove={handleCardMouseMove}
-                  className="group bg-white/[0.01] rounded-2xl p-6 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-amber-400/30 transition-all duration-300 spotlight-card"
+                  className="group bg-white/[0.01] rounded-2xl p-6 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-cyan-400/30 transition-all duration-300 spotlight-card"
                 >
                   <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-5 group-hover:scale-105 transition-transform duration-300">
-                    <Icon className="w-6 h-6 text-amber-400" />
+                    <Icon className="w-6 h-6 text-cyan-400" />
                   </div>
                   <h3 className="font-display text-lg font-bold text-white mb-2">{feature.title}</h3>
                   <p className="text-xs text-slate-400 font-light leading-relaxed">{feature.desc}</p>
@@ -189,7 +189,7 @@ const Web3Community = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500">
                 What Members Gain
               </span>
             </h2>
@@ -207,11 +207,11 @@ const Web3Community = () => {
                   transition={{ duration: 0.6, delay: i * 0.08 }}
                   whileHover={{ scale: 1.02 }}
                   onMouseMove={handleCardMouseMove}
-                  className="group bg-white/[0.01] rounded-2xl p-8 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-amber-400/30 transition-all duration-300 spotlight-card"
+                  className="group bg-white/[0.01] rounded-2xl p-8 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-cyan-400/30 transition-all duration-300 spotlight-card"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-yellow-400" />
+                    <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-cyan-400" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">{benefit.title}</h3>
@@ -247,15 +247,15 @@ const Web3Community = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500">
                 Learning & Growth Journey
               </span>
             </h2>
           </motion.div>
 
           <div className="relative">
-            <div className="hidden md:block absolute top-8 left-1/2 right-0 h-1 bg-gradient-to-r from-yellow-500 via-amber-400 to-yellow-500 z-0" style={{ left: 'calc(12.5% + 2rem)', right: 'calc(12.5% + 2rem)' }}></div>
-            
+            <div className="hidden md:block absolute top-8 left-1/2 right-0 h-1 bg-gradient-to-r from-cyan-500 via-cyan-400 to-blue-400 z-0" style={{ left: 'calc(12.5% + 2rem)', right: 'calc(12.5% + 2rem)' }}></div>
+
             <div className="grid md:grid-cols-4 gap-8 relative z-10">
               {steps.map((step, i) => {
                 const Icon = step.icon;
@@ -269,15 +269,15 @@ const Web3Community = () => {
                     whileHover={{ y: -8, scale: 1.05 }}
                     className="relative group"
                   >
-                    <div className="hidden md:flex w-16 h-16 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full items-center justify-center mx-auto mb-6 shadow-[0_0_25px_rgba(245,166,35,0.6)] relative z-20">
+                    <div className="hidden md:flex w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full items-center justify-center mx-auto mb-6 shadow-[0_0_25px_rgba(34,211,238,0.6)] relative z-20">
                       <Icon className="w-8 h-8 text-black" />
                     </div>
-                    
-                    <div className="md:hidden w-14 h-14 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full items-center justify-center mx-auto mb-4 shadow-[0_0_20px_rgba(245,166,35,0.5)] flex">
+
+                    <div className="md:hidden w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full items-center justify-center mx-auto mb-4 shadow-[0_0_20px_rgba(34,211,238,0.5)] flex">
                       <Icon className="w-7 h-7 text-black" />
                     </div>
-                    
-                    <div className="bg-black rounded-2xl p-6 border border-yellow-500/30 shadow-[0_0_15px_rgba(245,166,35,0.2)] hover:shadow-[0_0_25px_rgba(245,166,35,0.4)] hover:border-yellow-400 transition-all duration-300 text-center">
+
+                    <div className="bg-black rounded-2xl p-6 border border-cyan-500/30 shadow-[0_0_15px_rgba(34,211,238,0.2)] hover:shadow-[0_0_25px_rgba(34,211,238,0.4)] hover:border-cyan-400 transition-all duration-300 text-center">
                       <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
                       <p className="text-slate-400">{step.desc}</p>
                     </div>
@@ -303,7 +303,7 @@ const Web3Community = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500">
                 Mentorship-Driven
               </span>
             </h2>
@@ -319,7 +319,7 @@ const Web3Community = () => {
                 const Icon = item.icon;
                 return (
                   <div key={i} className="flex items-center gap-4 text-slate-300">
-                    <Icon className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                    <Icon className="w-6 h-6 text-cyan-400 flex-shrink-0" />
                     <span>{item.text}</span>
                   </div>
                 );
@@ -335,30 +335,20 @@ const Web3Community = () => {
             className="flex justify-center"
           >
             <motion.div
-              animate={{
-                rotate: [0, 10, -10, 0],
-                scale: [1, 1.05, 1]
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
+              animate={{ rotate: [0, 10, -10, 0], scale: [1, 1.05, 1] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="relative"
             >
-              <div className="w-64 h-64 bg-gradient-to-br from-yellow-500/20 to-amber-500/5 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(245,166,35,0.3)]">
+              <div className="w-64 h-64 bg-gradient-to-br from-cyan-500/20 to-blue-500/5 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(34,211,238,0.3)]">
                 <motion.div
-                  animate={{
-                    scale: [1, 1.1, 1],
-                    rotate: [0, 360]
-                  }}
+                  animate={{ scale: [1, 1.1, 1], rotate: [0, 360] }}
                   transition={{
                     scale: { duration: 3, repeat: Infinity },
                     rotate: { duration: 20, repeat: Infinity, ease: "linear" }
                   }}
-                  className="w-48 h-48 bg-gradient-to-br from-yellow-500/30 to-amber-500/10 rounded-full flex items-center justify-center"
+                  className="w-48 h-48 bg-gradient-to-br from-cyan-500/30 to-blue-500/10 rounded-full flex items-center justify-center"
                 >
-                  <Sparkles className="w-20 h-20 text-yellow-400" />
+                  <Sparkles className="w-20 h-20 text-cyan-400" />
                 </motion.div>
               </div>
             </motion.div>
@@ -380,7 +370,7 @@ const Web3Community = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-500">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500">
               Open Source & Building
             </span>
           </h2>
@@ -405,10 +395,10 @@ const Web3Community = () => {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 whileHover={{ y: -6 }}
                 onMouseMove={handleCardMouseMove}
-                className="group bg-white/[0.01] rounded-2xl p-8 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-amber-400/30 transition-all duration-300 spotlight-card"
+                className="group bg-white/[0.01] rounded-2xl p-8 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-cyan-400/30 transition-all duration-300 spotlight-card"
               >
                 <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-6 group-hover:rotate-3 transition-transform duration-300">
-                  <Icon className="w-7 h-7 text-amber-400" />
+                  <Icon className="w-7 h-7 text-cyan-400" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-white mb-3">{item.title}</h3>
                 <p className="text-slate-400 text-sm font-light leading-relaxed">{item.desc}</p>
@@ -421,8 +411,16 @@ const Web3Community = () => {
   );
 
   // CTA section
+  // CTA section
   const CTA = () => (
     <section className="py-24 relative overflow-hidden">
+      {/* Animated glow rings */}
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+        <div className="w-[500px] h-[500px] rounded-full border border-cyan-500/10 animate-ping" style={{ animationDuration: '3s' }} />
+        <div className="absolute w-[350px] h-[350px] rounded-full border border-cyan-400/15 animate-ping" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }} />
+        <div className="absolute w-[600px] h-[300px] bg-cyan-500/5 rounded-full blur-3xl" />
+      </div>
+
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -430,21 +428,40 @@ const Web3Community = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <p className="text-xs font-display font-bold tracking-widest text-cyan-400 uppercase mb-6">
+            Your Journey Starts Here
+          </p>
           <h2 className="text-5xl md:text-6xl font-extrabold mb-6">
-            <span className="font-display bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 tracking-tight">
+            <span className="font-display bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-cyan-200 to-blue-500 tracking-tight">
               Ready to Join?
             </span>
           </h2>
           <p className="text-base text-slate-400 mb-10 max-w-md mx-auto font-light leading-relaxed">
             Become part of the Web3 ecosystem and start your journey today.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.98 }}
-            className="px-10 py-4 bg-gradient-to-r from-amber-500/10 to-yellow-500/5 border border-amber-500/30 text-amber-300 rounded-full font-display font-bold text-sm tracking-widest hover:bg-amber-500/20 hover:border-amber-400/50 transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.05)] cursor-pointer"
-          >
-            Join Now <ArrowRight className="inline-block ml-2 w-4 h-4" />
-          </motion.button>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-black font-display font-black text-sm tracking-widest rounded-full shadow-[0_0_30px_rgba(34,211,238,0.4)] hover:shadow-[0_0_45px_rgba(34,211,238,0.6)] transition-all duration-300 cursor-pointer overflow-hidden group"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                Join Now
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+              </span>
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="px-10 py-4 bg-transparent border border-cyan-500/30 text-cyan-300 rounded-full font-display font-bold text-sm tracking-widest hover:bg-cyan-500/10 hover:border-cyan-400/60 transition-all duration-300 cursor-pointer"
+            >
+              Learn More
+            </motion.button>
+          </div>
         </motion.div>
       </div>
     </section>

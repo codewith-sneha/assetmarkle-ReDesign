@@ -7,6 +7,9 @@ import GroupImg from '../components/GroupImg';
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Preloader from '../components/PreLoader';
+import Stats from '../components/Stats';
+import WhatIsWeb3 from '../components/WhatIsWeb3';
+import Testimonials from '../components/Testimonials';
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -40,8 +43,11 @@ function Home() {
           transition={{ duration: 0.5 }}
         >
           <Hero/>
+          <Stats/>
           <Sponsors/>
+          <WhatIsWeb3/>
           <EventsCaraousel/>
+          <Testimonials/>
           <Contact/>
           <GroupImg/>
 
